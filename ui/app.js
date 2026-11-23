@@ -86,7 +86,7 @@ $("#logout").addEventListener("click", () => logout());
 async function refreshStatus() {
   const s = await api("/api/status");
   const draft = $("#mode-draft"), send = $("#mode-send");
-  draft.textContent = s.drafting === "claude" ? "Drafts: Claude" : "Drafts: placeholders (no API key)";
+  draft.textContent = s.drafting === "claude" ? "Drafts: Claude" : s.drafting === "sample" ? "Drafts: sample text (demo)" : "Drafts: placeholders (no API key)";
   draft.className = "pill " + (s.drafting === "claude" ? "solid" : "warn");
   send.textContent = s.sender === "mock" ? "Sending: practice mode, nothing leaves" : `Sending: ${s.sender}`;
   send.className = "pill " + (s.sender === "mock" ? "warn" : "solid");
