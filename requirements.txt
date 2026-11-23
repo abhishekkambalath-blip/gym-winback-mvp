@@ -1,0 +1,9 @@
+python-dotenv
+anthropic
+pytest
+pydantic
+scikit-learn
+fastapi
+uvicorn
+apscheduler<4
+httpx

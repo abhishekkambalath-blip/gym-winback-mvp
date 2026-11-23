@@ -1,0 +1,13 @@
+{
+  "visit_drop_high": 30,
+  "visit_drop_medium": 15,
+  "no_checkin_10_days": 25,
+  "no_checkin_21_days_extra": 10,
+  "payment_failed_30_days": 20,
+  "contract_ends_30_days": 15,
+  "new_member_declining": 15,
+  "freeze_request": 25,
+  "cancellation_request": 40,
+  "level_medium": 35,
+  "level_high": 60
+}
